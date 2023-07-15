@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #21325B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 200;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer{
+    margin: 40px auto;
+    width: 1000px;
+    max-height: 100vh;
+    background: #21325B;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+  }
+  .section1{
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .terms {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .section1 a{
+    display:block;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .terms a{
+    color: #FFFFFF; 
+    text-decoration: none;
+  }
+  i {
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .terms i {
+    background-color: #37466c;
+    padding: 8px;
+    margin: 6px 2px;
+    border-radius: 4px;
+  }
+ .copy-right p{
+    text-align: center;
+    color: #838494;
+  }
+  hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #FFFFFF20;
+  }
+  .chip {
+    padding: 3px 5px; 
+    font-size:small ;
+    font-weight: 500;
+    background-color: #f5ca96;
+    color: #302A32;
+    text-align: center;
+    border-radius: 4rem;
+    margin: 0 10px;
+  }
+  select{
+    background-color: #37466c;
+    padding: 7px; 
+    margin: 6px 2px ; 
+    align-self: center;
+    border-radius: 4px;
+    color: #FFFFFF;
+  }
+  @media screen and (max-width: 1024px) {
+    .front{
+       grid-column: 1/6;
+    }
+    h1{
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+    .section1{
+        grid-template-columns: 0.8fr 1.2fr 1.2fr 1fr;
+         line-height: 35px; 
+        font-size: 15px;
+        /* padding-top:0px; */
+    }
+    footer{
+        width: 80%;
+        padding-top: 0px;
+
+    }
+    .logo{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .copy-right p{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .copy-right {
+
+        margin:0px;
+    }
+    body{
+        font-weight: 500;
+        
+    }
+    .terms{
+        font-size: 15px;
+    }
+    .copy-right{
+        font-size: medium;
+    }
+      .chip {
+      padding: 0px 4px; 
+      display: inline-block;
+       border-radius: 2rem; 
+
+    }  
+}
+
+  @media screen and (max-width: 600px) {
+    .section1{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .terms{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: nowrap;
+    }
+    footer{
+        height: 90%;
+        width: 95%;
+        margin-top: 30px;
+  }
+   .ship{
+    padding: 0px 4px; 
+    display: inline;
+    border-radius: 2rem;
+    width: 10px;
+    
+  } 
+}
